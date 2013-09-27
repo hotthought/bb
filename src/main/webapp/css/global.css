@@ -1,0 +1,212 @@
+﻿@charset "utf-8";
+
+html,body {
+	color:#666;
+	font-size:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+*{margin:0px;padding:0px;font-size:12px;}
+ul,li{list-style:none;}
+* html iframe,* html frame{overflow:auto;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{height:0px;visibility:hidden;overflow:hidden;_height:1%}
+a,input,textarea{outline:none;}
+img{border:none;}
+
+/*超链接*/
+a{color:#000;text-decoration:none;cursor:pointer;}
+a:visited{color:#000;}
+a:hover{color:#1f7cbb;}
+a:actived{color:#000;}
+a:focus {outline:none;}
+
+
+
+
+/*表格*/
+table
+  {
+  border-collapse:collapse;
+  padding:0;
+  width:100%;
+}
+
+td,th 
+  {
+  font-size:1em;
+  text-align:center;
+}
+th 
+  {
+  line-height:24px;
+}
+td{height:20px;}
+.trHand{
+	cursor:pointer;
+}
+.eventInfoDIVLI{
+	width: 190px;
+	height:30px;
+	line-height: 30px;
+	text-align: left;
+	float:left;
+	margin-left: 1px;
+	margin-bottom: 1px;
+	background:#E6E1FF;
+	list-style-type: none;
+}
+#litem_content{
+	overflow:hidden;
+	height:180px;
+	margin:0px;
+	padding:0 8px;
+}
+
+#litem_content li{
+	margin-bottom:5px;
+}
+#litem_content li h6{
+	border-bottom:1px solid #cae0fe;
+	font-size:12px;height:26px;line-height:26px;color:#0063a0;
+}
+#litem_content li em{
+	float:left;
+	font-style:normal;
+	color:green;
+	margin:0 3px;
+}
+#litem_content li h6 label{
+	float:left;
+}
+#litem_content li h6 span{
+	float:right;
+	margin-right:3px;
+}
+#litem_content li p{
+	text-indent:1em;
+	padding:2px 6px;
+	*padding:2px 6px;
+	line-height:20px;
+}
+
+#litem_content_construction{
+	overflow:hidden;
+	height:180px;
+	margin:0px;
+	padding:0 8px;
+}
+
+#litem_content_construction li{
+	margin-bottom:12px;
+}
+#litem_content_construction li h6{
+	border-bottom:1px solid #cae0fe;
+	font-size:12px;height:26px;line-height:26px;color:#0063a0;
+}
+#litem_content_construction li em{
+	float:left;
+	font-style:normal;
+	color:green;
+	margin:0 3px;
+}
+#litem_content_construction li h6 label{
+	float:left;
+}
+#litem_content_construction li h6 span{
+	float:right;
+	margin-right:3px;
+}
+#litem_content_construction li p{
+	text-indent:1em;
+	padding:2px 6px;
+	*padding:2px 6px;
+	line-height:20px;
+}
+.menubox{
+	float:left;
+	padding:0px 8px 5px 10px;
+	margin-bottom:5px;
+}
+.menubox input{
+	float:left;
+	margin-top:1px;
+	_margin-top:-3px;
+	margin-right:4px;
+}
+.menubox label{
+	float:left;
+	
+}
+.menubox h2{
+	float:left;
+	width:100%;
+	margin-top:10px;
+}
+.menubox dl{
+	margin-left:30px;
+	_float:left;
+	_margin-left:10px;
+	margin-top:10px;
+}
+
+.menubox dl dt{
+	float:left;
+	width:100%;
+	margin-top:8px;
+	margin-top:10px\0;
+	*margin-top:10px;
+	_margin-top:1px;
+}
+
+.menubox dd{
+	float:left;
+	margin-left:20px;
+	_margin-left:10px;
+	margin-top:8px;
+	margin-top:10px\0;
+	*margin-top:10px;
+	_margin-top:1px;
+}
+
+/*新建节目单Dialog Begin*/
+
+#leftDiv_VmsProgram{
+    float:left;
+    width: 220px;  
+	position:absolute;
+	height:485px;
+	background:#7bb0e5;
+}
+#middleDiv {
+    position:absolute;
+	width:auto;
+	margin:10px 235px;
+	padding:10px;
+}
+.videobox{
+    background:#fff;
+	float:left;
+	width:100%;
+	}
+.tablebox{
+    width:100%;
+	height:100%;
+	float:left;
+	margin-top:10px;
+	}
+.tablebox td{ height:24px; padding-left:5px; text-align:left; background:#ffffff}
+.tablebox td span{ margin-left:5px; vertical-align:bottom}
+.tablebox label{margin-right:10px;}
+.btnbox1{ margin-top:10px;}
+.DialogTitleContent1 {
+    width:220px;
+	float: left;
+	color: #fff;
+	padding: 0px 0px 0px 5px;
+	line-height: 24px;
+	background:#5094d7;
+}

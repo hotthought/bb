@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>     
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 实体类,简称
+	<typeAliases>
+		<typeAlias alias="User" type="com.enjoyor.pojo.User" />
+	</typeAliases>
+	
+	<plugins>  
+		<plugin interceptor="com.enjoyor.plugin.PagePlugin">  
+			<property name="dialect" value="oracle"/>  
+			<property name="pageSqlId" value=".*listPage.*"/>  
+		</plugin>  
+	</plugins>  
+	 -->
+	 <properties>  
+              <property name="dialect" value="sqlserver"/>  
+    </properties>  
+          
+    <plugins>  
+            <plugin interceptor="com.enjoyor.interceptor.PaginationInterceptor"/>  
+    </plugins>
+</configuration>  

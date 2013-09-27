@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>用户登录-南昌交管局集成指挥平台</title>
+<link href="images/favicon.ico" rel="SHORTCUT ICON" />
+<link type="text/css" rel="stylesheet" href="css/global.css" />
+<link type="text/css" rel="stylesheet" href="css/login.css" />
+<link type="text/css" rel="stylesheet" href="theme/blue/skin.css" />
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/common.js" ></script> 
+<script type="text/javascript"> 
+    $(function() { 
+        $("#usernameId").focus(function() {           
+            $(this).addClass("focus"); 
+        	}).blur(function() { 
+            $(this).removeClass("focus"); 
+        }); 
+        
+        $("#passwordId").focus(function() {           
+            $(this).addClass("focus"); 
+	    	}).blur(function() { 
+	        $(this).removeClass("focus"); 
+	    });
+    }); 
+	function focusInput() {
+			document.getElementById('usernameId').focus();
+		}
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/IE6PNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('div,a,img,li');
+</script>
+<![endif]-->
+  </head>
+  <body class="login">
+  <div id="contain"> 
+  <div id="box">
+  <div id="logo"><img src="images/logo_login.png" width="330px" height="42px"></div>
+  <div id="content">
+	<ul>
+		<li style="margin-bottom:15px"><label>用户名：</label><input type="text" id="usernameId" name="j_username" value="admin" class="txtipt" style="width:153px;text-indent:5px;" /><em>请输入用户名</em></li>
+		<li style=";margin-bottom:15px"><label>密&nbsp;&nbsp;&nbsp;码：</label><input type="password" id="passwordId" name="j_password" value="" class="txtipt" style="width:153px;text-indent:5px;" /><em>请输入密码</em></li>	
+		<li id="btngroup">
+		<input id="submit" type="submit" value=" 登 录 " class="btn" hidefocus="true"/>
+		<input id="reset" type="reset" value=" 重 置 " class="cancelbtn" hidefocus="true"/>
+		</li>
+	</ul><div id="copyright">
+Copyright  &copy; 2012 南昌交管局 版权所有 技术支持：银江股份有限公司</div>
+</div>	
+	
+</div>
+</div>      
+		<script>
+			focusInput();
+		</script>
+  </body>
+</html>
